@@ -3,6 +3,8 @@ sur le serveur de l'ENT:
 
 https://etudiant.u-pem.fr/~sabine.thibout/portrait-chinois/
 
+https://sabine-thb.github.io/Autoportrait/
+
 
 
 
