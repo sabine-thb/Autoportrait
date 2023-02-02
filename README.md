@@ -1,11 +1,11 @@
+Voici le lien généré par GitHub pour accéder à mon site en public : 
+
+https://sabine-thb.github.io/Autoportrait/
+
 Voici l'URL vous permettant de vous rendre sur mon portrait chinois mis en ligne
 sur le serveur de l'ENT:
 
 https://etudiant.u-pem.fr/~sabine.thibout/portrait-chinois/
-
-https://sabine-thb.github.io/Autoportrait/
-
-
 
 
 Comment installer le site sur un serveur local XAMPP ?
