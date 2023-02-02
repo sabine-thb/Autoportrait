@@ -1,0 +1,460 @@
+@media(max-width:1075px){
+    header{
+        padding:10px 10px ;
+    }                           /*Pour rajouter une bordure noire à la page d'accueil à partir de 1075px de large*/
+
+}
+@media(max-width:896px){
+    .section{              /*Pour que la hauteur des sections ne grandisse pas quand on diminue la largeur de la fenêtre*/
+        height:70vh;
+    }
+
+    h3{
+        position:relative;
+        right:110px;
+    }                       /*Pour décaler le texte explicatif à partir de 896px de large*/
+
+    .image{
+        position:relative;
+        left:170px;
+        bottom:220px;       /*Pour change la position des images à partir de 896px de large*/
+    }
+
+    
+
+}
+
+@font-face {
+    font-family: 'kodchasan-regular';
+    src: url('Fonts/Kodchasan-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'kodchasan-bold';
+    src: url('Fonts/Kodchasan-Bold.woff2')format('woff2');
+}
+
+html{
+    scroll-behavior: smooth; /*Pour que le scroll avec les boutons de navigation ai un effet smooth*/
+    -ms-scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory;
+      
+}
+
+/*propriété pour enlever la barre de scroll
+overflow-y:hidden;*/
+
+body{
+    font-family:'kodchasan-regular', sans-serif;
+    background-color: black;
+    margin:0%;
+    cursor:url("Images/cursor.png"), pointer; /*Je change le curseur en rond*/
+    padding:0%;
+    font-size:100%;
+
+}
+
+a{
+    cursor:url("Images/cursor.png"), pointer; /*Je change le curseur en rond même sur les liens*/ 
+}
+
+.scrolltab{
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+
+.pageaccueil{
+    margin-top:0px;
+    border:0px;
+    height:100vh;
+    background-image:url("Images/background.jpg");
+    background-size:100vw 100vh;
+    background-repeat:no-repeat;
+    background-position-x:center;
+    
+    
+
+}
+
+.retouraccueil{
+    text-align:right;
+    color:white;
+    position: fixed;
+    bottom:80px;
+    right:100px;
+    z-index:1000;
+    padding:50px;
+  
+}
+
+.retouraccueil:hover{
+    color:#62B6B7;
+    transition:0.5s;
+}
+
+
+.section{
+    width:85vw; 
+    background-color:#97DECE;
+    background-image:linear-gradient(0deg, black 1%, rgba(0,0,0, 0%));
+    padding:10px;
+    border-radius:30px;
+    box-sizing: border-box;
+    position:relative;
+    text-align: center;
+
+    
+
+
+}
+
+
+.contour{
+    width:85vw;
+    padding: 50px;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:150px;
+    border-radius:30px;
+    border:#439A97 solid 6px;
+    
+    
+    
+}
+
+.texteaccueil{
+    text-align:right;
+    padding-right:50px;
+}
+
+h1{                 /*Titre du site*/
+    font-size:4.4rem;    
+    margin-left:250px;
+    display:block;
+}
+
+.texteaccueil.descriptif{ /*Description du portrait chinois*/
+    font-size:1.6rem;
+    padding-left:26.5vw; /*Je met mon padding-left en vw afin que quand je réduise ma fenêtre, mon texte ne s'étale pas complètement verticalement*/
+}
+
+.texteaccueil.nom{  /*Prénom en haut à gauche*/
+    font-size:1.6rem;
+    padding-top:40px;
+    margin-top:0; /*je mets margin 0 pour enlever la bande noire tout en haut de la page web*/
+    
+}
+
+
+.titresection{   /*Correspond au titre de chaque section*/
+    text-align: center;
+    font-size:2.5rem;
+}
+
+.ligne{
+    border-bottom:solid white 2px;
+    width:320px;
+
+}
+
+.ligne.gauche{
+    text-align:left;
+
+}
+
+.ligne.droite{
+    text-align: right;      /*Tenter de mettre une ligne de chaque côté du titre de chaque section*/
+}
+
+h3{                         /*Correspond au petit texte explicatif pour chaque section*/
+    display:inline-block;
+    vertical-align: top; 
+    font-size:1.4vw; /*Je laisse volontairement en vw pour que la police diminue en même temps que la fenêtre et qu'il y ai toujours un format de petite carte que l'on visualise entièrement à l'écran pour chaque section */
+    padding: 60px;
+    background-color: #62B6B7;
+    text-align:left;
+     
+/*Je met une hauteur et une largeur à mon texte car je veux que la taille du background soit la même pour toutes les sections*/
+    width: 40%;
+    height:30%;
+    min-width: 300px;
+    max-width: 400px;
+    border-radius: 100px;
+    margin-bottom:60px;
+    
+}
+
+.phrase1{                   /*J'agrandis la 1ere phrase du texte*/
+    font-size:1.8vw;
+}
+
+.image{                      /*Je stylise chaque image*/
+    display:inline-block;
+    vertical-align:top;
+    background-color: #62B6B7;
+    padding:40px;
+    border-radius:100px;
+    width: 30%;
+    margin-left:20px;
+    margin-bottom:80px;
+    
+
+}
+
+/*Je positionne chaque texte et image à droite ou à gauche une fois sur 2( pas réussi)*/
+
+/*.contour:nth-child(odd) h3{
+     position: relative;
+    left:33.2vw;                   
+}
+
+.contour:nth-child(odd) .image{
+    position: relative; 
+     left:-33.2vw;                   
+}                   */
+
+.extrait{ /*je stylise la phrase pour écouter l'extrait dans la section sur la musique*/
+    color:white;
+    padding:8px;
+    width:15vw;
+    background-color: #439A97;
+    border-radius:80px;
+    text-align:center;
+}
+
+
+a.boutonaccueil{            /*Je crée maintenant un bouton de navigation à l'accueil( bouton "je decouvre") */
+    display:block;
+    position:absolute;
+    left:50%;
+    right:50%;
+    transform: translate(-50%, -50%);
+    bottom:5%;
+    text-decoration: none;
+    font-size:1.4rem;
+    color:white;
+    text-align: center;
+    width:160px;
+    background-color:black;
+    border-radius:30px;
+    padding:15px;
+    
+}
+
+a.boutonaccueil:hover{    /*Je change la couleur de l'écriture du bouton quand le curseur passe dessus*/
+    color:#439A97;
+    transition-duration:0.2s;
+}
+
+
+.listeanalogies{ /*Correspond au menu des analogies */
+    position:absolute;
+    z-index:101;
+    bottom:650px;
+    background-color: white;
+    width:130px;
+    padding:15px;
+    border-radius:30px;
+    margin-left:40px;
+    margin-bottom:40px;
+    
+}
+
+
+.boutonmenu{
+    position:relative;
+    z-index:100; /*Je met un z-index 100 pour que les boutons de navigation puissent être positionnés au dessus des éléments ayant la classe texteaccueil qui sont situés au dessus les boutons dans l'HTML*/
+    display:block;
+    text-decoration: none;
+    font-size:1rem;
+    color:white;
+    text-align: center;
+    width:130px;
+    background-color:black;
+    border-radius:30px;
+    padding:15px;
+    margin-left:40px;
+    bottom:150px;
+   
+
+}
+
+a.boutonmenu:hover{    /*Je change la couleur de l'écriture du bouton quand le curseur passe dessus*/
+    background-color:#439A97;
+    transition-duration:0.5s;
+}
+
+
+.footer{
+    color:white;
+    padding:10px;
+    padding-left:25px;
+    margin:none;
+    
+}
+
+.footer:hover{
+    color:#62B6B7;
+    transition:0.5s;
+}
+
+.credits{
+    text-decoration: underline;
+    width:80px;
+    position:relative;
+    top:50px;
+    
+}
+
+.participation{            /*texte pour participer aux analogies(créer ensuite popup avec le formulaire*/
+    text-decoration:underline;
+    position:relative;
+    color:white;
+    width:375px;
+    top:50px;
+    padding-bottom:40px;
+}
+
+
+
+.fleche{               /*Je met en place une flèche en bas de chaque section pour ensuite pouvoir naviguer d'une section à une autre*/
+    display:block;
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    text-align:center; 
+  
+}
+
+form{             /*Je stylise mon formulaire*/
+    margin:auto;
+    width:400px;
+    text-align:center;
+}
+
+.cancel.one{        /*Je positionne la croix du premier popup pour revenir en arrière*/
+    padding:20px;
+    position:relative;
+    left:80vw;
+}
+
+
+
+.cancel.two{ /*Je positionne la croix du deuxième popup pour revenir en arrière*/
+    padding:20px;
+    position:relative;
+    left:160px;
+}
+
+h4{
+    color:white;
+    font-size:3vh;
+    text-align:center;
+}
+
+input{  /*Correspond aux case ou on écrit le texte du formulaire*/
+    width:300px;
+    height:35px;
+}
+
+.entrer{
+    font-size:1.1rem;
+    background-color:#439A97;
+}
+.entrer:hover{
+    background-color:#97DECE;
+}
+
+label{
+    color:white;
+    
+}
+
+/*mise en place des popup*/
+.popup1{   /*popup pour les crédits*/
+    position:fixed;
+    left:0px;
+    right:0px;
+    top:0px;
+    bottom:0px;
+    background-color:#62B6B7;
+    text-align:left;
+    padding-left:50px;
+    padding-top:50px;
+    padding-bottom:15px;
+    border:10px solid #439A97;
+    
+
+
+
+}
+
+.popup2{
+    position:fixed;
+    left:0px;
+    right:0px;
+    top:100px;
+    bottom:260px;
+    /*Je mets un padding left pour égaliser car le contour est inégal sans cela*/
+    background-color: black;
+    height:700px;
+
+}
+
+.popup-invisible{
+    display:none;
+}
+
+.popup-visible{
+    display:block;
+
+}
+
+.scroll{
+    color:black;/*Je met en blanc initialement pour voir la position de l'élément que j'ai incorporé puis je met en noir pour masquer*/
+    text-align:center;
+    position:relative;
+    top:100px;
+
+ }
+
+
+
+ @keyframes oscillate { /*Je fet un effet d'oscilation de la droite vers la gauche puis de la gauche vers la droite */
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(5deg);
+
+    }
+    50% {
+        transform: rotate(0deg);
+  
+    }
+
+    75% {
+        transform: rotate(-5deg);
+  
+    }
+
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  @keyframes oscillate2 { /*Je met un effet d'animation différent où la taille diminue puis grossit*/
+    0% {
+      transform: scale(0.80);
+    }
+    50% {
+      transform: scale(1);
+
+    }
+    100% {
+      transform: scale(0.80);
+    }
+  }
+  
